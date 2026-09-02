@@ -1,0 +1,2609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Al_Hamza Event Hall is a venue for weddings, mehndi, walima, birthdays, corporate events and special celebrations.">
+    <title>Al_Hamza Event Hall | Weddings & Events</title>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Al_Hamza Event Hall | Weddings & Events">
+    <meta property="og:description" content="An elegant venue designed for weddings, family celebrations, corporate events and unforgettable occasions.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org business details -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Al_Hamza Event Hall",
+      "description": "An elegant venue designed for weddings, family celebrations, corporate events and unforgettable occasions.",
+    "telephone": "+923193728138",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sec 11/2, Orangi Town",
+        "addressCountry": "PK"
+      }
+    }
+    </script>
+
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --bg-ivory: #FDFBF7;
+            --bg-card: #FFFFFF;
+            --text-dark: #1C201D;
+            --text-muted: #5C625E;
+            --gold-primary: #C5A059;
+            --gold-light: #E5C383;
+            --gold-dark: #997433;
+            --emerald-dark: #0C231E;
+            --emerald-light: #163B33;
+            --charcoal: #25282A;
+            --border-gold: rgba(197, 160, 89, 0.3);
+            --shadow-soft: 0 10px 30px rgba(12, 35, 30, 0.05);
+            --shadow-luxury: 0 20px 40px rgba(12, 35, 30, 0.12);
+            --font-serif: 'Cinzel', serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --transition: all 0.35s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-ivory);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .serif-text {
+            font-family: var(--font-serif);
+            letter-spacing: 0.5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- LAYOUT & UTILITIES --- */
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-subtitle {
+            color: var(--gold-primary);
+            font-family: var(--font-serif);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 2.4rem;
+            color: var(--emerald-dark);
+            margin-bottom: 16px;
+            line-height: 1.25;
+        }
+
+        .section-desc {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 32px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            color: #FFFFFF;
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+        }
+
+        .btn-gold:hover {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold-primary));
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(197, 160, 89, 0.45);
+        }
+
+        .btn-outline-gold {
+            border-color: var(--gold-primary);
+            color: var(--gold-primary);
+            background: transparent;
+        }
+
+        .btn-outline-gold:hover {
+            background: var(--gold-primary);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        .btn-emerald {
+            background: var(--emerald-dark);
+            color: #FFFFFF;
+        }
+
+        .btn-emerald:hover {
+            background: var(--emerald-light);
+            transform: translateY(-2px);
+        }
+
+        /* --- NAVBAR --- */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+            background: linear-gradient(to bottom, rgba(12, 35, 30, 0.9), rgba(12, 35, 30, 0));
+        }
+
+        .navbar.scrolled {
+            background: var(--emerald-dark);
+            padding: 12px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border-bottom: 1px solid var(--border-gold);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            display: flex;
+            flex-direction: column;
+            color: #FFFFFF;
+        }
+
+        .nav-logo .logo-main {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--gold-light);
+            line-height: 1;
+        }
+
+        .nav-logo .logo-sub {
+            font-size: 0.65rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            opacity: 0.9;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold-primary);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--gold-light);
+        }
+
+        .nav-cta {
+            padding: 10px 20px;
+            font-size: 0.8rem;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            color: #FFFFFF;
+            font-size: 1.5rem;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FFFFFF;
+            background: linear-gradient(rgba(12, 35, 30, 0.6), rgba(12, 35, 30, 0.75)), 
+                        url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 0 20px;
+            margin-top: 40px;
+        }
+
+        .hero-title {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 36px;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .trust-strip {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border-top: 1px solid rgba(229, 195, 131, 0.3);
+            border-bottom: 1px solid rgba(229, 195, 131, 0.3);
+            padding: 14px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(12, 35, 30, 0.4);
+            backdrop-filter: blur(5px);
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            font-weight: 600;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #FFFFFF;
+            font-size: 1.2rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
+            40% { transform: translate(-50%, -10px); }
+            60% { transform: translate(-50%, -5px); }
+        }
+
+        /* --- WELCOME / ABOUT SECTION --- */
+        .welcome-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .welcome-img-wrapper {
+            position: relative;
+        }
+
+        .welcome-img {
+            border-radius: 4px;
+            box-shadow: var(--shadow-luxury);
+            border: 8px solid #FFFFFF;
+        }
+
+        .welcome-img-frame {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--gold-primary);
+            z-index: -1;
+            border-radius: 4px;
+        }
+
+        .welcome-content ul {
+            margin: 24px 0 32px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .welcome-content li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+
+        .welcome-content li i {
+            color: var(--gold-primary);
+            font-size: 0.85rem;
+        }
+
+        /* --- EVENT TYPES SECTION --- */
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .event-card {
+            background: var(--bg-card);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .event-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-luxury);
+            border-color: var(--border-gold);
+        }
+
+        .event-card-img {
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .event-card:hover .event-card-img img {
+            transform: scale(1.08);
+        }
+
+        .event-number {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--emerald-dark);
+            color: var(--gold-light);
+            font-family: var(--font-serif);
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            border-radius: 50%;
+            border: 1px solid var(--gold-primary);
+        }
+
+        .event-card-body {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .event-icon {
+            font-size: 1.8rem;
+            color: var(--gold-primary);
+            margin-bottom: 12px;
+        }
+
+        .event-title {
+            font-size: 1.3rem;
+            color: var(--emerald-dark);
+            margin-bottom: 10px;
+        }
+
+        .event-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* --- HALL FEATURES SECTION --- */
+        .features-bg {
+            background-color: var(--emerald-dark);
+            color: #FFFFFF;
+            position: relative;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            padding: 24px;
+            border-radius: 4px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--gold-light);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            font-size: 1.6rem;
+            color: var(--gold-light);
+            margin-bottom: 12px;
+        }
+
+        .feature-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        /* --- HALL SHOWCASE SECTION --- */
+        .showcase-wrapper {
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold);
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .showcase-main {
+            height: 420px;
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .showcase-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .showcase-side {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .showcase-sub {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            height: 200px;
+        }
+
+        .showcase-sub img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .showcase-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to top, rgba(12, 35, 30, 0.9), transparent);
+            color: #FFFFFF;
+            font-family: var(--font-serif);
+            font-size: 0.95rem;
+        }
+
+        .showcase-actions {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* --- GALLERY SECTION --- */
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--border-gold);
+            color: var(--text-dark);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--emerald-dark);
+            color: var(--gold-light);
+            border-color: var(--emerald-dark);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 240px;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(12, 35, 30, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+            color: #FFFFFF;
+            font-size: 1.5rem;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* --- LIGHTBOX --- */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.92);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-img {
+            max-width: 85%;
+            max-height: 80vh;
+            border: 2px solid var(--gold-primary);
+            border-radius: 4px;
+        }
+
+        .lightbox-close, .lightbox-prev, .lightbox-next {
+            position: absolute;
+            color: #FFFFFF;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            background: rgba(12, 35, 30, 0.6);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--gold-primary);
+        }
+
+        .lightbox-close { top: 30px; right: 30px; }
+        .lightbox-prev { left: 30px; top: 50%; transform: translateY(-50%); }
+        .lightbox-next { right: 30px; top: 50%; transform: translateY(-50%); }
+
+        .lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover {
+            background: var(--gold-primary);
+            color: var(--emerald-dark);
+        }
+
+        /* --- EVENT PACKAGES --- */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .package-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold);
+            border-radius: 4px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-card.popular {
+            border: 2px solid var(--gold-primary);
+            transform: scale(1.03);
+        }
+
+        .package-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold-primary);
+            color: #FFFFFF;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .package-title {
+            font-size: 1.4rem;
+            color: var(--emerald-dark);
+            margin-bottom: 10px;
+        }
+
+        .package-notice {
+            font-size: 1.1rem;
+            color: var(--gold-dark);
+            font-weight: 600;
+            margin: 15px 0 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--border-gold);
+        }
+
+        .package-features {
+            margin-bottom: 30px;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .package-features li {
+            padding: 10px 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .package-features li i {
+            color: var(--gold-primary);
+        }
+
+        /* --- DECORATION SECTION --- */
+        .decor-wrapper {
+            background: var(--bg-card);
+            border-radius: 4px;
+            box-shadow: var(--shadow-luxury);
+            border: 1px solid var(--border-gold);
+            overflow: hidden;
+        }
+
+        .decor-tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border-gold);
+            background: var(--emerald-dark);
+            overflow-x: auto;
+        }
+
+        .decor-tab {
+            padding: 18px 28px;
+            color: #FFFFFF;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            font-family: var(--font-serif);
+            transition: var(--transition);
+            white-space: nowrap;
+            opacity: 0.7;
+        }
+
+        .decor-tab.active, .decor-tab:hover {
+            opacity: 1;
+            background: rgba(197, 160, 89, 0.2);
+            color: var(--gold-light);
+            border-bottom: 3px solid var(--gold-primary);
+        }
+
+        .decor-content {
+            padding: 40px;
+            display: none;
+        }
+
+        .decor-content.active {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .decor-text h3 {
+            font-size: 1.8rem;
+            color: var(--emerald-dark);
+            margin-bottom: 15px;
+        }
+
+        .decor-checklist {
+            margin-top: 20px;
+        }
+
+        .decor-checklist li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-dark);
+        }
+
+        .decor-checklist li i {
+            color: var(--gold-primary);
+        }
+
+        /* --- EVENT PLANNING PROCESS --- */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--emerald-dark);
+            color: var(--gold-light);
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border: 2px solid var(--gold-primary);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            color: var(--emerald-dark);
+            margin-bottom: 8px;
+        }
+
+        .step-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* --- WHY CHOOSE AL_HAMZA --- */
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .reason-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 4px;
+            border: 1px solid var(--border-gold);
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+        }
+
+        .reason-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .reason-num {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--gold-primary);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .reason-title {
+            font-size: 1.2rem;
+            color: var(--emerald-dark);
+            margin-bottom: 10px;
+        }
+
+        .reason-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* --- TESTIMONIALS --- */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.08);
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+
+        .testimonial-stars {
+            color: var(--gold-primary);
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--emerald-dark);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-event {
+            font-size: 0.8rem;
+            color: var(--gold-dark);
+        }
+
+        /* --- EVENT INQUIRY CALCULATOR --- */
+        .calc-wrapper {
+            background: var(--emerald-dark);
+            color: #FFFFFF;
+            padding: 50px;
+            border-radius: 4px;
+            border: 1px solid var(--border-gold);
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .calc-form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 0.85rem;
+            color: var(--gold-light);
+            letter-spacing: 0.5px;
+        }
+
+        .form-control {
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            border-radius: 4px;
+            color: #FFFFFF;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--gold-primary);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .form-control option {
+            background: var(--emerald-dark);
+            color: #FFFFFF;
+        }
+
+        .calc-result {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px dashed var(--border-gold);
+            padding: 30px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .calc-result-title {
+            font-size: 1.2rem;
+            color: var(--gold-light);
+            margin-bottom: 10px;
+        }
+
+        .calc-summary {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* --- BOOKING FORM & CONTACT --- */
+        .booking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: var(--shadow-luxury);
+            border: 1px solid var(--border-gold);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--emerald-dark);
+            color: var(--gold-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+
+        .contact-text h4 {
+            font-size: 0.95rem;
+            color: var(--emerald-dark);
+            margin-bottom: 2px;
+        }
+
+        .contact-text p, .contact-text a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .contact-text a:hover {
+            color: var(--gold-dark);
+        }
+
+        .form-notice {
+            font-size: 0.85rem;
+            color: var(--gold-dark);
+            margin-top: 10px;
+            display: none;
+            padding: 10px;
+            background: rgba(197, 160, 89, 0.1);
+            border-radius: 4px;
+        }
+
+        /* --- WHATSAPP SECTION --- */
+        .whatsapp-banner {
+            background: linear-gradient(135deg, #128C7E, #075E54);
+            color: #FFFFFF;
+            padding: 40px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            box-shadow: var(--shadow-luxury);
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .whatsapp-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .whatsapp-info i {
+            font-size: 3rem;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1EBE5D;
+            color: #FFFFFF;
+        }
+
+        /* --- FAQ SECTION --- */
+        .faq-accordion {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 4px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .faq-header {
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--emerald-dark);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .faq-header:hover {
+            color: var(--gold-dark);
+        }
+
+        .faq-icon {
+            color: var(--gold-primary);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 25px;
+            background: rgba(253, 251, 247, 0.5);
+        }
+
+        .faq-body p {
+            padding-bottom: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* --- LOCATION SECTION --- */
+        .map-wrapper {
+            height: 380px;
+            width: 100%;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid var(--border-gold);
+            box-shadow: var(--shadow-soft);
+            margin-top: 30px;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            background: var(--emerald-dark);
+            color: #FFFFFF;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            border-top: 3px solid var(--gold-primary);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-about .logo-main {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            color: var(--gold-light);
+            margin-bottom: 4px;
+        }
+
+        .footer-about .logo-sub {
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            color: #FFFFFF;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .footer-desc {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-title {
+            font-size: 1.1rem;
+            color: var(--gold-light);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--gold-primary);
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-light);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+        }
+
+        /* --- SCROLL TO TOP --- */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 44px;
+            height: 44px;
+            background: var(--gold-primary);
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-luxury);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .scroll-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background: var(--emerald-dark);
+            color: var(--gold-light);
+        }
+
+        /* --- MODALS --- */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-card {
+            background: var(--bg-card);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 4px;
+            border: 1px solid var(--border-gold);
+            position: relative;
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        /* --- RESPONSIVE STYLES --- */
+        @media (max-width: 1200px) {
+            .events-grid, .features-grid, .gallery-grid, .packages-grid, .reasons-grid, .testimonials-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .features-grid, .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .welcome-grid, .showcase-grid, .decor-content.active, .calc-grid, .booking-grid {
+                grid-template-columns: 1fr;
+            }
+            .events-grid, .gallery-grid, .packages-grid, .reasons-grid, .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero-title { font-size: 2.5rem; }
+            .calc-form-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: var(--emerald-dark);
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px;
+                transition: var(--transition);
+                border-left: 1px solid var(--border-gold);
+            }
+            .nav-menu.active { right: 0; }
+            .hamburger { display: block; }
+            .events-grid, .gallery-grid, .packages-grid, .reasons-grid, .testimonials-grid, .features-grid, .process-grid {
+                grid-template-columns: 1fr;
+            }
+            .welcome-content ul { grid-template-columns: 1fr; }
+            .hero-title { font-size: 2rem; }
+            .hero-subtitle { font-size: 1rem; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .whatsapp-banner { flex-direction: column; text-align: center; }
+            .whatsapp-info { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-main">AL_HAMZA</span>
+                <span class="logo-sub">EVENT HALL</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#booking" class="btn btn-gold nav-cta">Book Your Event</a>
+            <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title serif-text">Celebrate Your Special Moments at Al_Hamza Event Hall</h1>
+            <p class="hero-subtitle">An elegant venue designed for weddings, family celebrations, corporate events and unforgettable occasions.</p>
+            <div class="hero-btns">
+                <a href="#booking" class="btn btn-gold">Book Your Event</a>
+                <a href="#showcase" class="btn btn-outline-gold">Explore Our Hall</a>
+            </div>
+            <div class="trust-strip">
+                <span class="trust-item">Weddings</span>
+                <span class="trust-item">•</span>
+                <span class="trust-item">Mehndi</span>
+                <span class="trust-item">•</span>
+                <span class="trust-item">Baraat</span>
+                <span class="trust-item">•</span>
+                <span class="trust-item">Walima</span>
+                <span class="trust-item">•</span>
+                <span class="trust-item">Corporate Events</span>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- WELCOME / ABOUT SECTION -->
+    <section class="section-padding" id="about">
+        <div class="container">
+            <div class="welcome-grid">
+                <div class="welcome-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Al_Hamza Hall Interior" class="welcome-img">
+                    <div class="welcome-img-frame"></div>
+                </div>
+                <div class="welcome-content">
+                    <span class="section-subtitle">Welcome to Al_Hamza</span>
+                    <h2 class="section-title">Your Celebration Deserves The Perfect Setting</h2>
+                    <p class="section-desc">At Al_Hamza Event Hall, we bring your dream celebrations to life with sophisticated ambiance, meticulous attention to detail, and top-tier hospitality tailored for Pakistani wedding traditions and private gatherings.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Elegant event spaces</li>
+                        <li><i class="fas fa-check-circle"></i> Beautiful décor options</li>
+                        <li><i class="fas fa-check-circle"></i> Comfortable guest seating</li>
+                        <li><i class="fas fa-check-circle"></i> Professional event management</li>
+                        <li><i class="fas fa-check-circle"></i> Convenient central location</li>
+                        <li><i class="fas fa-check-circle"></i> Memorable atmosphere</li>
+                    </ul>
+                    <a href="#facilities" class="btn btn-emerald">Discover Al_Hamza</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT TYPES SECTION -->
+    <section class="section-padding" id="events" style="background-color: rgba(197, 160, 89, 0.05);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Memorable Occasions</span>
+                <h2 class="section-title">Celebrate Every Occasion</h2>
+                <p class="section-desc">Tailored arrangements designed to honor tradition and modern luxury for all your milestone celebrations.</p>
+            </div>
+            <div class="events-grid">
+                <!-- Card 1 -->
+                <div class="event-card">
+                    <div class="event-card-img">
+                        <span class="event-number">01</span>
+                        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Wedding">
+                    </div>
+                    <div class="event-card-body">
+                        <i class="fas fa-rings-wedding event-icon"></i>
+                        <h3 class="event-title">Wedding</h3>
+                        <p class="event-desc">Grand setups crafted for your sacred union, complete with majestic floral stages and royal arrangements.</p>
+                        <button class="btn btn-outline-gold" onclick="openModal('Wedding', 'Our grand wedding arrangements include customized stages, luxury seating for family and guests, professional lighting, and complete coordination to ensure your big day is stress-free.')">Explore</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="event-card">
+                    <div class="event-card-img">
+                        <span class="event-number">02</span>
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Mehndi">
+                    </div>
+                    <div class="event-card-body">
+                        <i class="fas fa-spa event-icon"></i>
+                        <h3 class="event-title">Mehndi</h3>
+                        <p class="event-desc">Vibrant, colorful traditional setups designed with festive lighting, floral swings, and lively seating setups.</p>
+                        <button class="btn btn-outline-gold" onclick="openModal('Mehndi', 'Bring festive energy to life with yellow and green themed drapes, traditional marigold setups, specialized seating, and sound setup tailored for energetic performances.')">Explore</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="event-card">
+                    <div class="event-card-img">
+                        <span class="event-number">03</span>
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80" alt="Baraat">
+                    </div>
+                    <div class="event-card-body">
+                        <i class="fas fa-crown event-icon"></i>
+                        <h3 class="event-title">Baraat</h3>
+                        <p class="event-desc">Dignified and regal welcomes for groom procession with grand entrance pathways and banquet setups.</p>
+                        <button class="btn btn-outline-gold" onclick="openModal('Baraat', 'A royal reception for your honored guests featuring expansive entrance walkways, red carpet treatment, and high-capacity formal dining arrangements.')">Explore</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="event-card">
+                    <div class="event-card-img">
+                        <span class="event-number">04</span>
+                        <img src="https://images.unsplash.com/photo-1545232979-fbf34870f03e?auto=format&fit=crop&w=600&q=80" alt="Walima">
+                    </div>
+                    <div class="event-card-body">
+                        <i class="fas fa-glass-cheers event-icon"></i>
+                        <h3 class="event-title">Walima</h3>
+                        <p class="event-desc">Sophisticated, modern banquet aesthetics focused on elegance, fine dining setup, and refined decor.</p>
+                        <button class="btn btn-outline-gold" onclick="openModal('Walima', 'Celebrate with understated luxury featuring pastel floral arrangements, crystal chandeliers, ambient lighting, and high-end dining setups.')">Explore</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="event-card">
+                    <div class="event-card-img">
+                        <span class="event-number">05</span>
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80" alt="Birthday">
+                    </div>
+                    <div class="event-card-body">
+                        <i class="fas fa-birthday-cake event-icon"></i>
+                        <h3 class="event-title">Birthday</h3>
+                        <p class="event-desc">Custom theme celebrations for birthdays and anniversaries with personalized cake backdrops and lounge areas.</p>
+                        <button class="btn btn-outline-gold" onclick="openModal('Birthday', 'Whether an intimate family gathering or a lavish milestone birthday, we customize lighting, backdrops, and media arrangements to match your vision.')">Explore</button>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="event-card">
+                    <div class="event-card-img">
+                        <span class="event-number">06</span>
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Corporate Events">
+                    </div>
+                    <div class="event-card-body">
+                        <i class="fas fa-briefcase event-icon"></i>
+                        <h3 class="event-title">Corporate Events</h3>
+                        <p class="event-desc">Professional corporate galas, annual dinners, awards ceremonies, and business conferences.</p>
+                        <button class="btn btn-outline-gold" onclick="openModal('Corporate Events', 'Professional venue configuration complete with audio/visual presentation setups, podiums, executive dining setups, and ample guest parking.')">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALL FEATURES SECTION -->
+    <section class="section-padding features-bg" id="facilities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" style="color: var(--gold-light);">Venue Amenities</span>
+                <h2 class="section-title" style="color: #FFFFFF;">Everything You Need For A Memorable Event</h2>
+                <p class="section-desc" style="color: rgba(255,255,255,0.7);">Our facility is outfitted with comprehensive modern conveniences to ensure guest comfort.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-couch feature-icon"></i>
+                    <h4 class="feature-name">Elegant Interior</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chess-king feature-icon"></i>
+                    <h4 class="feature-name">Beautiful Stage</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chair feature-icon"></i>
+                    <h4 class="feature-name">Comfortable Seating</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lightbulb feature-icon"></i>
+                    <h4 class="feature-name">Professional Lighting</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-ribbon feature-icon"></i>
+                    <h4 class="feature-name">Event Decoration</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-utensils feature-icon"></i>
+                    <h4 class="feature-name">Catering Options</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-parking feature-icon"></i>
+                    <h4 class="feature-name">Parking</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users feature-icon"></i>
+                    <h4 class="feature-name">Guest-Friendly Environment</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALL SHOWCASE SECTION -->
+    <section class="section-padding" id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Venue Showcase</span>
+                <h2 class="section-title">Main Hall Highlights</h2>
+                <p class="section-desc">Take a glimpse inside our main hall arranged for luxury events.</p>
+            </div>
+            <div class="showcase-wrapper">
+                <div class="showcase-grid">
+                    <div class="showcase-main">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=80" alt="Main Hall Full View">
+                        <div class="showcase-overlay">Main Hall Grand View & Overhead Decor</div>
+                    </div>
+                    <div class="showcase-side">
+                        <div class="showcase-sub">
+                            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Stage Setup">
+                            <div class="showcase-overlay">Bridal Stage Setup</div>
+                        </div>
+                        <div class="showcase-sub">
+                            <img src="https://images.unsplash.com/photo-1545232979-fbf34870f03e?auto=format&fit=crop&w=600&q=80" alt="Banquet Seating">
+                            <div class="showcase-overlay">Banquet Seating & Centerpieces</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-actions">
+                    <a href="#gallery" class="btn btn-gold">View Gallery</a>
+                    <a href="#booking" class="btn btn-emerald">Request Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="section-padding" id="gallery" style="background-color: rgba(197, 160, 89, 0.05);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Visual Inspiration</span>
+                <h2 class="section-title">Our Event Gallery</h2>
+                <p class="section-desc">Explore recent decor themes and venue configurations across various function types.</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+                <button class="filter-btn" onclick="filterGallery('weddings')">Weddings</button>
+                <button class="filter-btn" onclick="filterGallery('mehndi')">Mehndi</button>
+                <button class="filter-btn" onclick="filterGallery('walima')">Walima</button>
+                <button class="filter-btn" onclick="filterGallery('decor')">Decor</button>
+                <button class="filter-btn" onclick="filterGallery('hall')">Hall</button>
+                <button class="filter-btn" onclick="filterGallery('stage')">Stage</button>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- 16 Unique Unsplash Images without repeats -->
+                <div class="gallery-item" data-category="weddings stage" onclick="openLightbox(0)">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=600&q=80" alt="Wedding Stage">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="hall decor" onclick="openLightbox(1)">
+                    <img src="https://images.unsplash.com/photo-1545232979-fbf34870f03e?auto=format&fit=crop&w=600&q=80" alt="Banquet Lighting">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="mehndi decor" onclick="openLightbox(2)">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Mehndi Setup">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="walima decor" onclick="openLightbox(3)">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80" alt="Walima Dining">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="stage weddings" onclick="openLightbox(4)">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Floral Stage">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="decor" onclick="openLightbox(5)">
+                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=80" alt="Table Arrangement">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="hall" onclick="openLightbox(6)">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Hall Entrance">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="weddings decor" onclick="openLightbox(7)">
+                    <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=600&q=80" alt="Pathway Decor">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="walima hall" onclick="openLightbox(8)">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80" alt="Walima Hall View">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="mehndi" onclick="openLightbox(9)">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80" alt="Festive Lighting">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="stage" onclick="openLightbox(10)">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="Stage Lighting">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="decor" onclick="openLightbox(11)">
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80" alt="Floral Centerpiece">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="weddings hall" onclick="openLightbox(12)">
+                    <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80" alt="Reception Hall">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="walima stage" onclick="openLightbox(13)">
+                    <img src="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=600&q=80" alt="Elegant Lounge Setup">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="hall decor" onclick="openLightbox(14)">
+                    <img src="https://images.unsplash.com/photo-1525268771113-32d9e9021a97?auto=format&fit=crop&w=600&q=80" alt="Chandeliers and Drapes">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" data-category="decor" onclick="openLightbox(15)">
+                    <img src="https://images.unsplash.com/photo-1509924603848-aca5e5f276d7?auto=format&fit=crop&w=600&q=80" alt="Entrance Floral Arch">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <span class="lightbox-prev" onclick="changeLightbox(-1)"><i class="fas fa-chevron-left"></i></span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Gallery Lightbox">
+        <span class="lightbox-next" onclick="changeLightbox(1)"><i class="fas fa-chevron-right"></i></span>
+    </div>
+
+    <!-- EVENT PACKAGES -->
+    <section class="section-padding" id="packages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Tailored Event Services</span>
+                <h2 class="section-title">Event Packages</h2>
+                <p class="section-desc">Choose from our structured event tiers. Packages can be fully customized according to your specific gathering requirements.</p>
+            </div>
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <h3 class="package-title">Classic Celebration</h3>
+                    <div class="package-notice">Custom Quote Required</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Standard Venue Hall Booking</li>
+                        <li><i class="fas fa-check"></i> Basic Seating & Table Setup</li>
+                        <li><i class="fas fa-check"></i> Standard Lighting Setup</li>
+                        <li><i class="fas fa-check"></i> On-site Event Coordination</li>
+                    </ul>
+                    <a href="#booking" class="btn btn-outline-gold">Request Custom Quote</a>
+                </div>
+                <!-- Package 2 -->
+                <div class="package-card popular">
+                    <span class="package-badge">Most Popular</span>
+                    <h3 class="package-title">Signature Celebration</h3>
+                    <div class="package-notice">Custom Quote Required</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Prime Venue Hall Booking</li>
+                        <li><i class="fas fa-check"></i> Enhanced Theme Decoration</li>
+                        <li><i class="fas fa-check"></i> Premium Stage & Backdrop</li>
+                        <li><i class="fas fa-check"></i> Ambient Lighting & Sound</li>
+                        <li><i class="fas fa-check"></i> Dedicated Manager Coordination</li>
+                    </ul>
+                    <a href="#booking" class="btn btn-gold">Request Custom Quote</a>
+                </div>
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <h3 class="package-title">Grand Celebration</h3>
+                    <div class="package-notice">Custom Quote Required</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Full Exclusive Venue Setup</li>
+                        <li><i class="fas fa-check"></i> Luxury Floral & Drape Decor</li>
+                        <li><i class="fas fa-check"></i> Royal Stage & Entrance Walkway</li>
+                        <li><i class="fas fa-check"></i> Full Audio/Visual Arrangement</li>
+                        <li><i class="fas fa-check"></i> Complete Managed Services</li>
+                    </ul>
+                    <a href="#booking" class="btn btn-outline-gold">Request Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DECORATION SECTION -->
+    <section class="section-padding" id="decor" style="background-color: rgba(197, 160, 89, 0.05);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Custom Aesthetics</span>
+                <h2 class="section-title">Designed Around Your Vision</h2>
+                <p class="section-desc">Switch between decor concepts to visualize your dream function.</p>
+            </div>
+            <div class="decor-wrapper">
+                <div class="decor-tabs">
+                    <button class="decor-tab active" onclick="switchDecor('floral', this)">Floral Décor</button>
+                    <button class="decor-tab" onclick="switchDecor('stage', this)">Stage Décor</button>
+                    <button class="decor-tab" onclick="switchDecor('table', this)">Table Décor</button>
+                    <button class="decor-tab" onclick="switchDecor('entrance', this)">Entrance Décor</button>
+                    <button class="decor-tab" onclick="switchDecor('mehndi', this)">Mehndi Theme</button>
+                    <button class="decor-tab" onclick="switchDecor('walima', this)">Walima Theme</button>
+                </div>
+                
+                <!-- Tab Content 1 -->
+                <div class="decor-content active" id="decor-floral">
+                    <div class="decor-text">
+                        <h3>Fresh & Premium Floral Decor</h3>
+                        <p>We craft exquisite floral arrangements featuring fresh blossoms tailored to match your event color palette.</p>
+                        <ul class="decor-checklist">
+                            <li><i class="fas fa-check-circle"></i> Imported & seasonal roses, lilies & orchids</li>
+                            <li><i class="fas fa-check-circle"></i> Stage floral backdrops & overhead arches</li>
+                            <li><i class="fas fa-check-circle"></i> Fresh table centerpieces</li>
+                        </ul>
+                    </div>
+                    <div><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80" style="border-radius:4px; width:100%; height:280px; object-fit:cover;" alt="Floral Decor"></div>
+                </div>
+
+                <!-- Tab Content 2 -->
+                <div class="decor-content" id="decor-stage">
+                    <div class="decor-text">
+                        <h3>Regal Stage Configurations</h3>
+                        <p>The centerpiece of your function. Designed for majestic photography and bride/groom seating.</p>
+                        <ul class="decor-checklist">
+                            <li><i class="fas fa-check-circle"></i> Custom sofa/couch selections</li>
+                            <li><i class="fas fa-check-circle"></i> Ambient backdrop spotlights</li>
+                            <li><i class="fas fa-check-circle"></i> Carpeted & elevated platform setups</li>
+                        </ul>
+                    </div>
+                    <div><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" style="border-radius:4px; width:100%; height:280px; object-fit:cover;" alt="Stage Decor"></div>
+                </div>
+
+                <!-- Tab Content 3 -->
+                <div class="decor-content" id="decor-table">
+                    <div class="decor-text">
+                        <h3>Refined Table Settings</h3>
+                        <p>Elegant table linens, premium glassware, and custom table numbers for structured guest reception.</p>
+                        <ul class="decor-checklist">
+                            <li><i class="fas fa-check-circle"></i> Champagne gold or ivory table runners</li>
+                            <li><i class="fas fa-check-circle"></i> Crystal candle holders & floral vases</li>
+                            <li><i class="fas fa-check-circle"></i> VIP table configurations</li>
+                        </ul>
+                    </div>
+                    <div><img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=80" style="border-radius:4px; width:100%; height:280px; object-fit:cover;" alt="Table Decor"></div>
+                </div>
+
+                <!-- Tab Content 4 -->
+                <div class="decor-content" id="decor-entrance">
+                    <div class="decor-text">
+                        <h3>Welcoming Entrances</h3>
+                        <p>Make a lasting first impression as guests step into your event space.</p>
+                        <ul class="decor-checklist">
+                            <li><i class="fas fa-check-circle"></i> Red carpet and walkway drapes</li>
+                            <li><i class="fas fa-check-circle"></i> Personalized welcome signage</li>
+                            <li><i class="fas fa-check-circle"></i> Ambient candle and lantern lit pathways</li>
+                        </ul>
+                    </div>
+                    <div><img src="https://images.unsplash.com/photo-1509924603848-aca5e5f276d7?auto=format&fit=crop&w=600&q=80" style="border-radius:4px; width:100%; height:280px; object-fit:cover;" alt="Entrance Decor"></div>
+                </div>
+
+                <!-- Tab Content 5 -->
+                <div class="decor-content" id="decor-mehndi">
+                    <div class="decor-text">
+                        <h3>Festive Mehndi Themes</h3>
+                        <p>Vibrant marigold flowers, colorful cushion lounges, and traditional Pakistani cultural aesthetics.</p>
+                        <ul class="decor-checklist">
+                            <li><i class="fas fa-check-circle"></i> Bright yellow, orange, and green drapes</li>
+                            <li><i class="fas fa-check-circle"></i> Traditional Jhoola (swing) stage decor</li>
+                            <li><i class="fas fa-check-circle"></i> Low floor seating & floor cushion options</li>
+                        </ul>
+                    </div>
+                    <div><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" style="border-radius:4px; width:100%; height:280px; object-fit:cover;" alt="Mehndi Theme"></div>
+                </div>
+
+                <!-- Tab Content 6 -->
+                <div class="decor-content" id="decor-walima">
+                    <div class="decor-text">
+                        <h3>Subtle Walima Aesthetics</h3>
+                        <p>Sophisticated white, pastel, and gold palettes that emit warmth and elegance.</p>
+                        <ul class="decor-checklist">
+                            <li><i class="fas fa-check-circle"></i> Crystal and mirror stage backdrops</li>
+                            <li><i class="fas fa-check-circle"></i> Soft white floral arches</li>
+                            <li><i class="fas fa-check-circle"></i> Subtle fairy light integration</li>
+                        </ul>
+                    </div>
+                    <div><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80" style="border-radius:4px; width:100%; height:280px; object-fit:cover;" alt="Walima Theme"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT PLANNING PROCESS -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Step-By-Step</span>
+                <h2 class="section-title">Event Planning Process</h2>
+                <p class="section-desc">Our simple four-step process ensures your event preparation remains smooth and organized.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Tell Us Your Date</h3>
+                    <p class="step-desc">Share your expected function dates and estimated guest count with our booking team.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Choose Your Setup</h3>
+                    <p class="step-desc">Select hall arrangements, seating styles, stage designs, and lighting preferences.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Customize Celebration</h3>
+                    <p class="step-desc">Finalize decor colors, catering options, and schedule timelines for the event day.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Celebrate Special Day</h3>
+                    <p class="step-desc">Relax while our management team executes your event smoothly according to plan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE AL_HAMZA -->
+    <section class="section-padding" style="background-color: rgba(12, 35, 30, 0.03);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Commitments</span>
+                <h2 class="section-title">Why Choose Al_Hamza</h2>
+                <p class="section-desc">Key qualities that make our venue a trusted choice for family functions.</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-num">01</div>
+                    <h3 class="reason-title">Elegant Atmosphere</h3>
+                    <p class="reason-desc">A tastefully decorated hall with high ceilings, clean aesthetics, and warm ambient lighting.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-num">02</div>
+                    <h3 class="reason-title">Beautiful Event Setup</h3>
+                    <p class="reason-desc">Meticulously maintained furniture, stage fixtures, and stage backdrops ready for your custom styling.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-num">03</div>
+                    <h3 class="reason-title">Flexible Event Options</h3>
+                    <p class="reason-desc">Adaptable floor plans that easily accommodate small intimate family functions to larger wedding receptions.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-num">04</div>
+                    <h3 class="reason-title">Professional Coordination</h3>
+                    <p class="reason-desc">Attentive management staff present throughout your event to assist with logistical requirements.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-num">05</div>
+                    <h3 class="reason-title">Comfortable Guest Experience</h3>
+                    <p class="reason-desc">Spacious seating layouts designed so guests can mingle and dine with ease and comfort.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-num">06</div>
+                    <h3 class="reason-title">Memorable Celebrations</h3>
+                    <p class="reason-desc">Our goal is providing a seamless setting where families can focus entirely on creating joyful memories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section-padding" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Guest Feedback</span>
+                <h2 class="section-title">Memories From Our Guests</h2>
+                <p class="section-desc">Read experiences from families who hosted events at our venue.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The hall setup for my sister's Baraat was handled with great care. The stage lighting and seating arrangements were comfortable for all our elders."</p>
+                    <div class="testimonial-author">Tariq Mahmood</div>
+                    <div class="testimonial-event">Baraat Function</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Our Mehndi event decor turned out super vibrant! The floral stage was exactly as we discussed during planning. Recommended for family functions."</p>
+                    <div class="testimonial-author">Ayesha & Family</div>
+                    <div class="testimonial-event">Mehndi Function</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Hosted our annual corporate dinner here. The management was cooperative, audio setup worked fine, and dining area was well organized."</p>
+                    <div class="testimonial-author">Kamran Raza</div>
+                    <div class="testimonial-event">Corporate Dinner</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT INQUIRY CALCULATOR -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="calc-wrapper">
+                <div class="calc-grid">
+                    <div>
+                        <span class="section-subtitle" style="color: var(--gold-light);">Requirement Planner</span>
+                        <h2 class="section-title" style="color: #FFFFFF; font-size: 1.8rem; margin-bottom: 20px;">Event Inquiry Calculator</h2>
+                        <form id="calc-form">
+                            <div class="calc-form-grid">
+                                <div class="form-group">
+                                    <label>Event Type</label>
+                                    <select class="form-control" id="calc-type">
+                                        <option value="Wedding">Wedding</option>
+                                        <option value="Mehndi">Mehndi</option>
+                                        <option value="Baraat">Baraat</option>
+                                        <option value="Walima">Walima</option>
+                                        <option value="Birthday">Birthday</option>
+                                        <option value="Corporate">Corporate</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Guest Count</label>
+                                    <select class="form-control" id="calc-guests">
+                                        <option value="Under 100">Under 100</option>
+                                        <option value="100-200">100–200</option>
+                                        <option value="200-300">200–300</option>
+                                        <option value="300-500">300–500</option>
+                                        <option value="500+">500+</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Event Duration</label>
+                                    <select class="form-control" id="calc-duration">
+                                        <option value="4 Hours">4 Hours</option>
+                                        <option value="6 Hours">6 Hours</option>
+                                        <option value="8 Hours">8 Hours</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Decoration Tier</label>
+                                    <select class="form-control" id="calc-decor">
+                                        <option value="Standard">Standard</option>
+                                        <option value="Premium">Premium</option>
+                                        <option value="Luxury">Luxury</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" style="grid-column: span 2;">
+                                    <label>Catering Service</label>
+                                    <select class="form-control" id="calc-catering">
+                                        <option value="Not Required">Not Required (Venue Setup Only)</option>
+                                        <option value="Required">Required (Inquire Menu Options)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-gold" style="margin-top: 20px; width: 100%;" onclick="calculateEstimate()">Calculate Estimate Summary</button>
+                        </form>
+                    </div>
+                    <div class="calc-result">
+                        <h3 class="calc-result-title">Custom Quote Required</h3>
+                        <p class="calc-summary" id="calc-summary-text">Select your parameters and click "Calculate Estimate Summary" to organize your booking requirements.</p>
+                        <a href="#booking" class="btn btn-outline-gold" style="font-size: 0.8rem;">Send Selection To Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING FORM & CONTACT -->
+    <section class="section-padding" id="booking">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Reservations</span>
+                <h2 class="section-title">Request Venue Availability</h2>
+                <p class="section-desc">Submit your date and event details to start planning your celebration with our venue management team.</p>
+            </div>
+            <div class="booking-grid">
+                <!-- Form -->
+                <div class="contact-card">
+                    <form id="booking-form" onsubmit="handleBookingSubmit(event)">
+                        <div class="form-group" style="margin-bottom: 16px;">
+                            <label style="color: var(--emerald-dark);">Full Name *</label>
+                            <input type="text" class="form-control" id="book-name" required placeholder="Enter your full name" style="color: var(--text-dark); background: #FFF; border: 1px solid rgba(0,0,0,0.15);">
+                        </div>
+                        <div class="calc-form-grid" style="margin-bottom: 16px;">
+                            <div class="form-group">
+                                <label style="color: var(--emerald-dark);">Phone Number *</label>
+                                <input type="tel" class="form-control" id="book-phone" required placeholder="03XX-XXXXXXX" style="color: var(--text-dark); background: #FFF; border: 1px solid rgba(0,0,0,0.15);">
+                            </div>
+                            <div class="form-group">
+                                <label style="color: var(--emerald-dark);">Email Address</label>
+                                <input type="email" class="form-control" id="book-email" placeholder="name@example.com" style="color: var(--text-dark); background: #FFF; border: 1px solid rgba(0,0,0,0.15);">
+                            </div>
+                        </div>
+                        <div class="calc-form-grid" style="margin-bottom: 16px;">
+                            <div class="form-group">
+                                <label style="color: var(--emerald-dark);">Event Type *</label>
+                                <select class="form-control" id="book-type" style="color: var(--text-dark); background: #FFF; border: 1px solid rgba(0,0,0,0.15);">
+                                    <option value="Wedding">Wedding</option>
+                                    <option value="Mehndi">Mehndi</option>
+                                    <option value="Baraat">Baraat</option>
+                                    <option value="Walima">Walima</option>
+                                    <option value="Birthday">Birthday</option>
+                                    <option value="Corporate">Corporate</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label style="color: var(--emerald-dark);">Expected Guests</label>
+                                <select class="form-control" id="book-guests" style="color: var(--text-dark); background: #FFF; border: 1px solid rgba(0,0,0,0.15);">
+                                    <option value="Under 100">Under 100</option>
+                                    <option value="100-200">100–200</option>
+                                    <option value="200-300">200–300</option>
+                                    <option value="300-500">300–500</option>
+                                    <option value="500+">500+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calc-form-grid" style="margin-bottom: 16px;">
+                            <div class="form-group">
+                                <label style="color: var(--emerald-dark);">Preferred Date *</label>
+                                <input type="date" class="form-control" id="book-date" required style="color: var(--text-dark); background: #FFF; border: 1px solid rgba(0,0,0,0.15);">
+                            </div>
+                            <div class="form-group">
+                                <label style="color: var(--emerald-dark);">Preferred Slot</label>
+                                <select class="form-control" id="book-time" style="color: var(--text-dark); background: #FFF; border: 1px solid rgba(0,0,0,0.15);">
+                                    <option value="Day Function (Lunch)">Day Function (Lunch)</option>
+                                    <option value="Night Function (Dinner)">Night Function (Dinner)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label style="color: var(--emerald-dark);">Additional Requirements</label>
+                            <textarea class="form-control" id="book-reqs" rows="3" placeholder="Tell us about specific decor themes or questions..." style="color: var(--text-dark); background: #FFF; border: 1px solid rgba(0,0,0,0.15);"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold" style="width:100%;">Request Availability</button>
+                        <div class="form-notice" id="booking-success-msg">
+                            Thank you! Your event inquiry has been prepared successfully. Our team can contact you to discuss availability.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Direct Details -->
+                <div style="display: flex; flex-direction: column; justify-content: center;" id="contact">
+                    <span class="section-subtitle">Let's Plan Together</span>
+                    <h2 class="section-title" style="margin-bottom: 20px;">Contact Al_Hamza</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 30px;">Reach out directly via phone or WhatsApp to verify booking slots or schedule a hall visit.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Phone Number</h4>
+                            <a href="tel:+923193728138">0319 3728138</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-text">
+                            <h4>WhatsApp Inquiry</h4>
+                            <a href="https://wa.me/923193728138" target="_blank">+92 319 3728138</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h4>Email Address</h4>
+                            <a href="mailto:info@alhamza.com">info@alhamza.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Hall Address</h4>
+                            <p>Orangi Town, Karachi, Sec 11/2, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHATSAPP BANNER -->
+            <div class="whatsapp-banner">
+                <div class="whatsapp-info">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3 style="font-size: 1.3rem;">Instant Booking Inquiry via WhatsApp</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">Send your function date directly to our WhatsApp support.</p>
+                    </div>
+                </div>
+                <button class="btn btn-whatsapp" onclick="sendWhatsAppDirect()"><i class="fab fa-whatsapp"></i> Book via WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section-padding" id="faq" style="background-color: rgba(197, 160, 89, 0.05);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Common inquiries regarding hall reservations, customization, and event timing.</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        What types of events can be hosted at Al_Hamza Event Hall?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>We host weddings, Mehndi functions, Baraat receptions, Walima banquets, birthday parties, corporate galas, and private family dinners.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        How many guests can the hall accommodate?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>Hall guest capacity varies depending on seating configuration (banquet dining vs lounge setup). Please inquire directly with our team to discuss verified capacity for your setup.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        Do you provide venue decoration services?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>Yes, we offer stage decor, floral arrangements, backdrop design, table settings, and theme drapes customized to your event theme.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        Is catering available at the hall?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>Catering arrangements and menu options can be discussed during your consultation. You can inquire about in-house partners or venue-only booking.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        Is parking available for guests?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>Dedicated guest parking availability depends on function size and verified site logistics. Please check with venue management upon visit.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        Can we customize the event setup and stage decor?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>Absolutely. We encourage custom stage themes, color drape selections, and specialized entrance decor to match your personal vision.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        How early should we book our event date?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>For peak wedding seasons, we recommend reserving your preferred date 2 to 4 months in advance to secure availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        Can I visit the venue before booking?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>Yes! Hall tours can be scheduled with our management team during operating hours to inspect the setup firsthand.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        What are the available event function timings?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>We host both afternoon (day) and evening (night) functions according to local venue regulations and booking slots.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        How can I request a formal quotation?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <p>Fill out our online inquiry form above or connect with us directly via WhatsApp with your date and guest requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section class="section-padding" id="location">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Venue Address</span>
+                <h2 class="section-title">Find Al_Hamza Event Hall</h2>
+                <p class="section-desc">Visit us at our central venue location.</p>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <p style="font-weight: 600; color: var(--emerald-dark);"><i class="fas fa-map-marker-alt" style="color: var(--gold-primary);"></i> Address: Orangi Town, Karachi, Sec 11/2, Pakistan</p>
+                <a href="https://maps.google.com" target="_blank" class="btn btn-gold" style="margin-top: 15px;"><i class="fas fa-directions"></i> Get Directions</a>
+            </div>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.447833077673!2d67.0652!3d24.8732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUyJzIzLjUiTiA2N8KwMDMnNTQuNyJF!5e0!3m2!1sen!2spk!4v1650000000000!5m2!1sen!2spk" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <span class="logo-main">AL_HAMZA</span>
+                    <span class="logo-sub">EVENT HALL</span>
+                    <p class="footer-desc">"Where Every Celebration Becomes a Beautiful Memory." Providing elegant event spaces and hospitality for all your life celebrations.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#booking">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Event Types</h4>
+                    <ul class="footer-links">
+                        <li><a href="#events">Weddings</a></li>
+                        <li><a href="#events">Mehndi Functions</a></li>
+                        <li><a href="#events">Baraat Banquets</a></li>
+                        <li><a href="#events">Walima Receptions</a></li>
+                        <li><a href="#events">Corporate Galas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone-alt" style="color:var(--gold-primary); margin-right: 8px;"></i> <a href="tel:+923193728138">0319 3728138</a></li>
+                        <li><i class="fab fa-whatsapp" style="color:var(--gold-primary); margin-right: 8px;"></i> <a href="https://wa.me/923193728138" target="_blank">+92 319 3728138</a></li>
+                        <li><i class="fas fa-envelope" style="color:var(--gold-primary); margin-right: 8px;"></i> <a href="mailto:info@alhamza.com">info@alhamza.com</a></li>
+                        <li><i class="fas fa-map-marker-alt" style="color:var(--gold-primary); margin-right: 8px;"></i> <span style="color:rgba(255,255,255,0.7); font-size:0.85rem;">Orangi Town, Karachi, Sec 11/2</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al_Hamza Event Hall. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- EVENT DETAIL MODAL -->
+    <div class="modal" id="eventModal">
+        <div class="modal-card">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title" class="serif-text" style="color: var(--emerald-dark); font-size: 1.6rem; margin-bottom: 12px;">Event Name</h3>
+            <p id="modal-body" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">Event Details</p>
+            <a href="#booking" class="btn btn-gold" onclick="closeModal()">Inquire For This Event</a>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FUNCTIONALITY -->
+    <script>
+        // --- NAVBAR STICKY & ACTIVE NAVIGATION ---
+        const navbar = document.getElementById('navbar');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Scroll Top Button
+            const scrollTopBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.add('active');
+            } else {
+                scrollTopBtn.classList.remove('active');
+            }
+
+            // ScrollSpy
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // --- MOBILE MENU TOGGLE ---
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // --- SCROLL TO TOP ---
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // --- EVENT MODALS ---
+        function openModal(title, text) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-body').innerText = text;
+            document.getElementById('eventModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('eventModal').classList.remove('active');
+        }
+
+        // --- GALLERY FILTER & LIGHTBOX ---
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        let currentImageIndex = 0;
+        let visibleImages = [];
+
+        function filterGallery(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            galleryItems.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category').includes(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            updateVisibleImages();
+        }
+
+        function updateVisibleImages() {
+            visibleImages = Array.from(galleryItems).filter(item => item.style.display !== 'none');
+        }
+        updateVisibleImages();
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const imgSrc = galleryItems[index].querySelector('img').src;
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function changeLightbox(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = galleryItems.length - 1;
+            if (currentImageIndex >= galleryItems.length) currentImageIndex = 0;
+            
+            const imgSrc = galleryItems[currentImageIndex].querySelector('img').src;
+            document.getElementById('lightbox-img').src = imgSrc;
+        }
+
+        // --- DECORATION TABS ---
+        function switchDecor(tabId, btn) {
+            document.querySelectorAll('.decor-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.decor-content').forEach(c => c.classList.remove('active'));
+            
+            btn.classList.add('active');
+            document.getElementById(`decor-${tabId}`).classList.add('active');
+        }
+
+        // --- FAQ ACCORDION ---
+        function toggleFaq(header) {
+            const faqItem = header.parentElement;
+            const faqBody = faqItem.querySelector('.faq-body');
+
+            if (faqItem.classList.contains('active')) {
+                faqItem.classList.remove('active');
+                faqBody.style.maxHeight = null;
+            } else {
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-body').style.maxHeight = null;
+                });
+                faqItem.classList.add('active');
+                faqBody.style.maxHeight = faqBody.scrollHeight + "px";
+            }
+        }
+
+        // --- EVENT CALCULATOR ---
+        function calculateEstimate() {
+            const type = document.getElementById('calc-type').value;
+            const guests = document.getElementById('calc-guests').value;
+            const duration = document.getElementById('calc-duration').value;
+            const decor = document.getElementById('calc-decor').value;
+            const catering = document.getElementById('calc-catering').value;
+
+            const summary = `Selected Requirements:\n• Event: ${type}\n• Guest Range: ${guests}\n• Slot Duration: ${duration}\n• Decor Tier: ${decor}\n• Catering: ${catering}\n\nOur team will generate a customized pricing quote based on these exact specifications.`;
+            
+            document.getElementById('calc-summary-text').innerText = summary;
+        }
+
+        // --- BOOKING FORM VALIDATION & HANDLING ---
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('book-name').value;
+            const phone = document.getElementById('book-phone').value;
+
+            if (name && phone) {
+                document.getElementById('booking-success-msg').style.display = 'block';
+            }
+        }
+
+        // --- WHATSAPP MESSAGE GENERATOR ---
+        function sendWhatsAppDirect() {
+            const type = document.getElementById('book-type').value || 'Event';
+            const guests = document.getElementById('book-guests').value || 'Unspecified';
+            const date = document.getElementById('book-date').value || 'TBD';
+
+            const message = `Hello Al_Hamza Event Hall, I would like to inquire about booking the venue. Event Type: ${type}. Guests: ${guests}. Preferred Date: ${date}.`;
+            const encodedMessage = encodeURIComponent(message);
+            
+            window.open(`https://wa.me/923193728138?text=${encodedMessage}`, '_blank');
+        }
+
+        document.querySelectorAll('img').forEach((image) => {
+            const removeBrokenImage = () => {
+                const wrapper = image.closest('.event-card, .gallery-item, .showcase-main, .showcase-sub, .welcome-img-wrapper, .modal-content') || image;
+                wrapper.remove();
+            };
+            image.addEventListener('error', removeBrokenImage, { once: true });
+            if (image.complete && image.naturalWidth === 0) removeBrokenImage();
+        });
+    </script>
+</body>
+</html>
